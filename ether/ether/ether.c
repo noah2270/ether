@@ -11,7 +11,7 @@ void packet_capture(u_char* args, const struct pcap_pkthdr* header, const u_char
 
     const u_char* eth_header = packet;
 
-    // Ethernet 주소 출력
+    // Ethernet 헤더 정보 출력
     printf("Source MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
         eth_header[6], eth_header[7], eth_header[8], eth_header[9], eth_header[10], eth_header[11]);
     printf("Destination MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
